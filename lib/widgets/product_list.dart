@@ -27,7 +27,6 @@ class _ProductListState extends State<ProductList> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.sizeOf(context);
     const border = OutlineInputBorder(
       borderSide: BorderSide(
         color: Color.fromRGBO(225, 225, 225, 1),
@@ -82,7 +81,7 @@ class _ProductListState extends State<ProductList> {
                       ),
                       backgroundColor: selectedFIlter == filter
                           ? Theme.of(context).colorScheme.primary
-                          : Color.fromRGBO(245, 247, 249, 1),
+                          : const Color.fromRGBO(245, 247, 249, 1),
                       padding: const EdgeInsets.symmetric(
                           horizontal: 10, vertical: 15),
                       label: Text(filter),

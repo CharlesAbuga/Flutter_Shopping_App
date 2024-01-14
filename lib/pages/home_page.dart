@@ -13,8 +13,8 @@ class _HomePageState extends State<HomePage> {
   int currentPage = 0;
 
   List<Widget> pages = [
-    ProductList(),
-    CartPage(),
+    const ProductList(),
+    const CartPage(),
 
   ];
 

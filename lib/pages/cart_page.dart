@@ -38,7 +38,7 @@ class CartPage extends StatelessWidget {
                              Navigator.of(context).pop;
                           },
                           
-                          child: Text('No', 
+                          child: const Text('No', 
                           style: TextStyle(
                             color: Colors.blue,
                             fontWeight: FontWeight.bold,
@@ -50,7 +50,7 @@ class CartPage extends StatelessWidget {
                             context.read<CartProvider>().removeProduct(cartItem);
                            Navigator.of(context).pop;
                           },
-                          child: Text('Yes',
+                          child: const Text('Yes',
                             style: TextStyle(
                             color: Colors.red,
                             fontWeight: FontWeight.bold,
